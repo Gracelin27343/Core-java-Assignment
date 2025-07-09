@@ -5,19 +5,19 @@ import java.util.Scanner;
 public class Commission extends Student {
 
     public void acceptDetails() {
-        Scanner sc = new Scanner(System.in);
+        Scanner st= new Scanner(System.in);
 
         System.out.print("Enter Name: ");
-        setName(sc.nextLine());
+        setName(st.nextLine());
 
         System.out.print("Enter Address: ");
-        setAddress(sc.nextLine());
+        setAddress(st.nextLine());
 
         System.out.print("Enter Phone Number: ");
-        setPhone(Integer.parseInt(sc.nextLine()));  // Safer with nextLine() + parse
+        setPhone(Integer.parseInt(st.nextLine()));  // Safer with nextLine() + parse
 
         System.out.print("Enter Sales Amount: ");
-        setSalesAmount(sc.nextDouble());
+        setSalesAmount(st.nextDouble());
     }
 
     public void calculateCommission() {
